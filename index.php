@@ -20,16 +20,17 @@ require_once "./autoload.php";
 // echo $student1->showFullName();
 // echo $student1->intro();
 
-$user = new Db("users");
-
-// Create Data
+// Db
+// $user = new Db("users");
 // print_r($user->create([
 //     'name' => 'naingnaing',
 //     'email' => 'nn@gmail.com',
 //     'gender' => 'female',
 //     'address' => "Mandlay"
 // ]));
-
 // print_r($user->index());
+// print_r($user->show(1));
 
-print_r($user->show(1));
+//File Writer
+$html = new FileWriter("home.html");
+$html->write("<h1>Hello Home Page</h1>");
