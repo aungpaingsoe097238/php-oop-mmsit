@@ -32,5 +32,10 @@ require_once "./autoload.php";
 // print_r($user->show(1));
 
 //File Writer
-$html = new FileWriter("home.html");
-$html->write("<h1>Hello Home Page</h1>");
+// $html = new FileWriter("home.html");
+// $html->write("<h1>Hello Home Page</h1>");
+
+//Static Method 
+print_r(StaticMethod::$a);
+print_r(StaticMethod::b());
+print_r(StaticMethod::c());
