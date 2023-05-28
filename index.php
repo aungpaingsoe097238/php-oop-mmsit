@@ -49,10 +49,11 @@ require_once "./autoload.php";
 // print($queryBuilder->orderBy('id','DESC')->sql()); 
 
 //Access modifier
-$me = new Person();
+// $me = new Person();
 // echo $me->talk();
 
 //encapsulation 
-$me->setFbPassword('new password');
+$me = new Person();
 var_dump($me->getFbPassword());
-
+var_dump($me->setFbPassword('password'));
+var_dump($me->getFbPassword());
