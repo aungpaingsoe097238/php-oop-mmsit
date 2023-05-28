@@ -47,3 +47,8 @@ require_once "./autoload.php";
 // print($queryBuilder->orWhere('age',">",18)->orWhere('gender','=','female')->sql());
 // echo "\n";
 // print($queryBuilder->orderBy('id','DESC')->sql()); 
+
+//Access modifier
+// $me = new Person();
+// echo $me->talk();
+
