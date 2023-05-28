@@ -36,6 +36,14 @@ require_once "./autoload.php";
 // $html->write("<h1>Hello Home Page</h1>");
 
 //Static Method 
-print_r(StaticMethod::$a);
-print_r(StaticMethod::b());
-print_r(StaticMethod::c());
+// print_r(StaticMethod::$a);
+// print_r(StaticMethod::b());
+// print_r(StaticMethod::c());
+
+//QueryBuilder
+// $queryBuilder = new QueryBuilder("users");
+// print($queryBuilder->where('gender','=','female')->sql());
+// echo "\n";
+// print($queryBuilder->orWhere('age',">",18)->orWhere('gender','=','female')->sql());
+// echo "\n";
+// print($queryBuilder->orderBy('id','DESC')->sql()); 
