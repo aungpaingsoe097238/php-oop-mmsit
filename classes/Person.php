@@ -8,7 +8,19 @@ class Person
     protected $money;
     protected $gfName;
 
-    private $fbPassword;
+    private $fbPassword = "532";
+
+    // encapsulation start
+    public function setFbPassword($newFbPassword)
+    {
+        $this->fbPassword = $newFbPassword;
+    }
+
+    public function getFbPassword()
+    {
+        return $this->fbPassword;
+    }
+    // encapsulation end
 
     public function walk()
     {
